@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.styleEditor {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rain {
+  position: absolute;
+}
+
+
+
+/* 画上左心房 */
+.snowfall-flakes::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 16px;
+  background-color: red;
+  border-radius: 5px 5px 0px 0px;
+  transform: rotate(-45deg);
+}
+
+/* 再画上右心房 */
+.snowfall-flakes::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 16px;
+  background-color: red;
+  border-radius: 5px 5px 0px 0px;
+  transform: translate(4.3px) rotate(45deg);
+}
